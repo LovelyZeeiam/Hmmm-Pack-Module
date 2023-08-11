@@ -5,6 +5,12 @@ This library was originally written because of the fact that Minecraft can only 
 
 Another useful function of this library is that it lets you easily create lists and perform operations on them (hopefully anyways, as I haven't actually made that at the time of writing).
 
+If you want to make it a submodule of your pack, please read the LICENSE first, then add the "pack-module" branch as a submodule with the directory name "hmmm":
+
+```
+git submodule add https://github.com/LovelyZeeiam/Hmmm-Pack-Module.git -b pack-module --name hmmm data/
+```
+
 # lingo
 Unfortunately, there is no style standard for Minecraft Functions. Thus, I will briefly describe the style standard I will be using.
 
