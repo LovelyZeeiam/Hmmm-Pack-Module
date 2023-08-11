@@ -8,7 +8,7 @@
 #   hmmm_io.R[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 #
-# @modifies temp.[0..19]
+# @modifies hmmm_temp.[0..19]
 
 scoreboard players add P0 hmmm_io 1
 execute if score P0 hmmm_io matches 2 run scoreboard players set P0 hmmm_io 0

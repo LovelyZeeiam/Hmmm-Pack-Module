@@ -3,4 +3,4 @@
 #
 
 scoreboard players add R2 hmmm_io 1
-scoreboard players operation 0 temp -= 1 temp
+scoreboard players operation 0 hmmm_temp -= 1 hmmm_temp

@@ -2,9 +2,9 @@
 #   Case when in bounds
 #
 
-scoreboard players operation 17 temp = P0 hmmm_io
-scoreboard players operation 18 temp = P1 hmmm_io
-scoreboard players operation 19 temp = P2 hmmm_io
+scoreboard players operation 17 hmmm_temp = P0 hmmm_io
+scoreboard players operation 18 hmmm_temp = P1 hmmm_io
+scoreboard players operation 19 hmmm_temp = P2 hmmm_io
 
 scoreboard players operation P3 hmmm_io = P0 hmmm_io
 scoreboard players operation P4 hmmm_io = P1 hmmm_io
@@ -32,9 +32,9 @@ scoreboard players operation P0 hmmm_io = R0 hmmm_io
 scoreboard players operation P1 hmmm_io = R1 hmmm_io
 scoreboard players operation P2 hmmm_io = R2 hmmm_io
 
-scoreboard players operation P3 hmmm_io = 17 temp
-scoreboard players operation P4 hmmm_io = 18 temp
-scoreboard players operation P5 hmmm_io = 19 temp
+scoreboard players operation P3 hmmm_io = 17 hmmm_temp
+scoreboard players operation P4 hmmm_io = 18 hmmm_temp
+scoreboard players operation P5 hmmm_io = 19 hmmm_temp
 
 function hmmm:float/32/multiply/main
 

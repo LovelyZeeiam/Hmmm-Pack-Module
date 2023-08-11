@@ -18,9 +18,9 @@ execute if score R1 hmmm_io matches ..-1 run function hmmm:float/32/decompose/ex
 scoreboard players operation R2 hmmm_io = R1 hmmm_io
 
 # slice the significand off
-scoreboard players operation R1 hmmm_io /= 8388608 constant
+scoreboard players operation R1 hmmm_io /= 8388608 hmmm_constant
 # sign the exponent
 scoreboard players remove R1 hmmm_io 127
 
 # slice the exponent off
-scoreboard players operation R2 hmmm_io %= 8388608 constant
+scoreboard players operation R2 hmmm_io %= 8388608 hmmm_constant

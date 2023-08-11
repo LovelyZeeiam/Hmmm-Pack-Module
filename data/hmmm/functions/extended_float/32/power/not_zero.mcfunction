@@ -7,9 +7,9 @@ scoreboard players operation P1 hmmm_io = R1 hmmm_io
 scoreboard players operation P2 hmmm_io = R2 hmmm_io
 
 
-scoreboard players operation P3 hmmm_io = 23 temp
-scoreboard players operation P4 hmmm_io = 24 temp
-scoreboard players operation P5 hmmm_io = 25 temp
+scoreboard players operation P3 hmmm_io = 23 hmmm_temp
+scoreboard players operation P4 hmmm_io = 24 hmmm_temp
+scoreboard players operation P5 hmmm_io = 25 hmmm_temp
 
 function hmmm:float/32/multiply/main
 scoreboard players operation P0 hmmm_io = R0 hmmm_io

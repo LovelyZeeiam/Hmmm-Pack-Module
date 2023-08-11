@@ -15,4 +15,4 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 
 function hmmm:float/32/divide/main
 
-scoreboard players set 0 temp 0
+scoreboard players set 0 hmmm_temp 0

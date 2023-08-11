@@ -3,7 +3,7 @@
 
 # save for later
 
-scoreboard players operation 9 temp = P2 hmmm_io
+scoreboard players operation 9 hmmm_temp = P2 hmmm_io
 
 # turn exponent int into float
 scoreboard players operation P0 hmmm_io = P1 hmmm_io
@@ -19,15 +19,15 @@ scoreboard players set P5 hmmm_io 3240472
 # multiply exponent by ln2
 function hmmm:float/32/multiply/main
 
-# save result of multiplying exponent to temp.[11..13]
-scoreboard players operation 11 temp = R0 hmmm_io
-scoreboard players operation 12 temp = R1 hmmm_io
-scoreboard players operation 13 temp = R2 hmmm_io
+# save result of multiplying exponent to hmmm_temp.[11..13]
+scoreboard players operation 11 hmmm_temp = R0 hmmm_io
+scoreboard players operation 12 hmmm_temp = R1 hmmm_io
+scoreboard players operation 13 hmmm_temp = R2 hmmm_io
 
 # turn mantissa to float (io.P[0,1]=0, hmmm_io.P2=mantissa)
 scoreboard players set P0 hmmm_io 0
 scoreboard players set P1 hmmm_io 0
-scoreboard players operation P2 hmmm_io = 9 temp
+scoreboard players operation P2 hmmm_io = 9 hmmm_temp
 
 # a = 0.67311669056
 scoreboard players set P3 hmmm_io 0
@@ -49,22 +49,22 @@ scoreboard players set P5 hmmm_io 0
 
 function hmmm:float/32/subtract/main
 
-# initial constants
+# initial hmmm_constants
 
-# save this to temp.[14..16] This is (ax-1)
-scoreboard players operation 14 temp = R0 hmmm_io
-scoreboard players operation 15 temp = R1 hmmm_io
-scoreboard players operation 16 temp = R2 hmmm_io
+# save this to hmmm_temp.[14..16] This is (ax-1)
+scoreboard players operation 14 hmmm_temp = R0 hmmm_io
+scoreboard players operation 15 hmmm_temp = R1 hmmm_io
+scoreboard players operation 16 hmmm_temp = R2 hmmm_io
 
-# make a duplicate copy at temp.[17..19]. This is (ax-1)^i
-scoreboard players operation 17 temp = 14 temp
-scoreboard players operation 18 temp = 15 temp
-scoreboard players operation 19 temp = 16 temp
+# make a duplicate copy at hmmm_temp.[17..19]. This is (ax-1)^i
+scoreboard players operation 17 hmmm_temp = 14 hmmm_temp
+scoreboard players operation 18 hmmm_temp = 15 hmmm_temp
+scoreboard players operation 19 hmmm_temp = 16 hmmm_temp
 
-# accumulator at temp.[20..22] (copy temp.[14..16])) This is the sum
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+# accumulator at hmmm_temp.[20..22] (copy hmmm_temp.[14..16])) This is the sum
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 # ✅ correct up to here
 
@@ -79,9 +79,9 @@ function hmmm:extended_float/32/log/calculate_exponent
 scoreboard players remove R1 hmmm_io 1
 
 # subtract it from accumulator
-scoreboard players operation P0 hmmm_io = 20 temp
-scoreboard players operation P1 hmmm_io = 21 temp
-scoreboard players operation P2 hmmm_io = 22 temp
+scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -89,9 +89,9 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 function hmmm:float/32/subtract/main
 
 # set this to the accumulator
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 # i=3
 
@@ -111,9 +111,9 @@ scoreboard players set P5 hmmm_io 4194304
 function hmmm:float/32/divide/main
 
 # add it to accumulator
-scoreboard players operation P0 hmmm_io = 20 temp
-scoreboard players operation P1 hmmm_io = 21 temp
-scoreboard players operation P2 hmmm_io = 22 temp
+scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -121,9 +121,9 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 function hmmm:float/32/add/main
 
 # set this to the accumulator
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 # i=4
 
@@ -134,9 +134,9 @@ function hmmm:extended_float/32/log/calculate_exponent
 scoreboard players remove R1 hmmm_io 2
 
 # subtract it from accumulator
-scoreboard players operation P0 hmmm_io = 20 temp
-scoreboard players operation P1 hmmm_io = 21 temp
-scoreboard players operation P2 hmmm_io = 22 temp
+scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -144,9 +144,9 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 function hmmm:float/32/subtract/main
 
 # set this to the accumulator
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 # i=5
 
@@ -164,9 +164,9 @@ scoreboard players set P5 hmmm_io 2097152
 function hmmm:float/32/divide/main
 
 # add it to accumulator
-scoreboard players operation P0 hmmm_io = 20 temp
-scoreboard players operation P1 hmmm_io = 21 temp
-scoreboard players operation P2 hmmm_io = 22 temp
+scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -174,9 +174,9 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 function hmmm:float/32/add/main
 
 # set this to the accumulator
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 
 # i=6
@@ -195,9 +195,9 @@ scoreboard players set P5 hmmm_io 4194304
 function hmmm:float/32/divide/main
 
 # subtract it from accumulator
-scoreboard players operation P0 hmmm_io = 20 temp
-scoreboard players operation P1 hmmm_io = 21 temp
-scoreboard players operation P2 hmmm_io = 22 temp
+scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -205,9 +205,9 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 function hmmm:float/32/subtract/main
 
 # set this to the accumulator
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 # i=7
 
@@ -225,9 +225,9 @@ scoreboard players set P5 hmmm_io 6291456
 function hmmm:float/32/divide/main
 
 # add it to accumulator
-scoreboard players operation P0 hmmm_io = 20 temp
-scoreboard players operation P1 hmmm_io = 21 temp
-scoreboard players operation P2 hmmm_io = 22 temp
+scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -235,9 +235,9 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 function hmmm:float/32/add/main
 
 # set this to the accumulator
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 # i=8
 
@@ -248,9 +248,9 @@ function hmmm:extended_float/32/log/calculate_exponent
 scoreboard players remove R1 hmmm_io 3
 
 # subtract it from accumulator
-scoreboard players operation P0 hmmm_io = 20 temp
-scoreboard players operation P1 hmmm_io = 21 temp
-scoreboard players operation P2 hmmm_io = 22 temp
+scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -258,9 +258,9 @@ scoreboard players operation P5 hmmm_io = R2 hmmm_io
 function hmmm:float/32/subtract/main
 
 # set this to the accumulator
-scoreboard players operation 20 temp = R0 hmmm_io
-scoreboard players operation 21 temp = R1 hmmm_io
-scoreboard players operation 22 temp = R2 hmmm_io
+scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 # If you need even more precision
 
@@ -280,9 +280,9 @@ scoreboard players operation 22 temp = R2 hmmm_io
 # function hmmm:float/32/divide/main
 
 # # add it to accumulator
-# scoreboard players operation P0 hmmm_io = 20 temp
-# scoreboard players operation P1 hmmm_io = 21 temp
-# scoreboard players operation P2 hmmm_io = 22 temp
+# scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+# scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+# scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 # scoreboard players operation P3 hmmm_io = R0 hmmm_io
 # scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -290,9 +290,9 @@ scoreboard players operation 22 temp = R2 hmmm_io
 # function hmmm:float/32/add/main
 
 # # set this to the accumulator
-# scoreboard players operation 20 temp = R0 hmmm_io
-# scoreboard players operation 21 temp = R1 hmmm_io
-# scoreboard players operation 22 temp = R2 hmmm_io
+# scoreboard players operation 20 hmmm_temp = R0 hmmm_io
+# scoreboard players operation 21 hmmm_temp = R1 hmmm_io
+# scoreboard players operation 22 hmmm_temp = R2 hmmm_io
 
 
 # # i=10
@@ -311,9 +311,9 @@ scoreboard players operation 22 temp = R2 hmmm_io
 # function hmmm:float/32/divide/main
 
 # # subtract it from accumulator
-# scoreboard players operation P0 hmmm_io = 20 temp
-# scoreboard players operation P1 hmmm_io = 21 temp
-# scoreboard players operation P2 hmmm_io = 22 temp
+# scoreboard players operation P0 hmmm_io = 20 hmmm_temp
+# scoreboard players operation P1 hmmm_io = 21 hmmm_temp
+# scoreboard players operation P2 hmmm_io = 22 hmmm_temp
 
 # scoreboard players operation P3 hmmm_io = R0 hmmm_io
 # scoreboard players operation P4 hmmm_io = R1 hmmm_io
@@ -322,7 +322,7 @@ scoreboard players operation 22 temp = R2 hmmm_io
 
 
 
-# This is the final result so don't set it to temp.[20..22] but rather set it to hmmm_io P.[0..2]
+# This is the final result so don't set it to hmmm_temp.[20..22] but rather set it to hmmm_io P.[0..2]
 scoreboard players operation P0 hmmm_io = R0 hmmm_io
 scoreboard players operation P1 hmmm_io = R1 hmmm_io
 scoreboard players operation P2 hmmm_io = R2 hmmm_io
@@ -337,9 +337,9 @@ function hmmm:float/32/subtract/main
 
 # add the log of exponent and mantissa together
 
-scoreboard players operation P0 hmmm_io = 11 temp
-scoreboard players operation P1 hmmm_io = 12 temp
-scoreboard players operation P2 hmmm_io = 13 temp
+scoreboard players operation P0 hmmm_io = 11 hmmm_temp
+scoreboard players operation P1 hmmm_io = 12 hmmm_temp
+scoreboard players operation P2 hmmm_io = 13 hmmm_temp
 
 scoreboard players operation P3 hmmm_io = R0 hmmm_io
 scoreboard players operation P4 hmmm_io = R1 hmmm_io

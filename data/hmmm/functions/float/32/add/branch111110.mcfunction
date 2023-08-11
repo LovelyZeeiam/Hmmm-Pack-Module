@@ -1,7 +1,7 @@
 #> hmmm:float/32/add/branch111110
 # shift significand left, decrease exponent
 
-scoreboard players operation R2 hmmm_io *= 2 constant
+scoreboard players operation R2 hmmm_io *= 2 hmmm_constant
 scoreboard players remove R1 hmmm_io 1
 
 # check for underflow

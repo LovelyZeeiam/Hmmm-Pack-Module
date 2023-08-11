@@ -3,4 +3,4 @@
 ##
 
 function hmmm:float/32/add/branch12
-execute if score 9 temp matches 1..2 unless score 10 temp = 9 temp run function hmmm:float/32/add/exception/nan
+execute if score 9 hmmm_temp matches 1..2 unless score 10 hmmm_temp = 9 hmmm_temp run function hmmm:float/32/add/exception/nan

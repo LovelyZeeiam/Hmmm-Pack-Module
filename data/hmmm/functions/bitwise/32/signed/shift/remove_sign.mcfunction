@@ -4,4 +4,4 @@
 
 scoreboard players add P0 hmmm_io 2147483647
 scoreboard players add P0 hmmm_io 1
-scoreboard players set 0 temp 1
+scoreboard players set 0 hmmm_temp 1

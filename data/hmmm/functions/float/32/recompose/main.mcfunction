@@ -17,7 +17,7 @@ scoreboard players operation R0 hmmm_io = P1 hmmm_io
 # add 127 to remove sign
 scoreboard players add R0 hmmm_io 127
 # shift hmmm_io.R0 to put it in the right place
-scoreboard players operation R0 hmmm_io *= 8388608 constant
+scoreboard players operation R0 hmmm_io *= 8388608 hmmm_constant
 
 # add the significand to exponent to yield last 31-bits of the float
 scoreboard players operation R0 hmmm_io += P2 hmmm_io
