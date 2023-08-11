@@ -31,8 +31,8 @@ In which O is the scoreboard objective name, P is the prefix for the scoreboard 
 For example, the variable hmmm_io.R0 could be accessed in-game using ```/scoreboard players get R0 hmmm_io```.  
 
 Multiple variables can be represented using square brackets. For example:  
-```IO.R[0..3]``` would represent variables ```IO.R0, hmmm_io.R1, hmmm_io.R2, hmmm_io.R3```  
-```IO.R[0, 2, 6]``` would represent variables ```IO.R0, hmmm_io.R2, hmmm_io.R6```  
+```hmmm_io.R[0..3]``` would represent variables ```hmmm_io.R0, hmmm_io.R1, hmmm_io.R2, hmmm_io.R3```  
+```hmmm_io.R[0, 2, 6]``` would represent variables ```hmmm_io.R0, hmmm_io.R2, hmmm_io.R6```  
 
 ***Storage Variables***  
 Variables which hold data in the form of data storage will be represented in the format:
@@ -121,7 +121,7 @@ Detailed information about each of these functions can be found by opening the d
 Although it is possible to perform unsigned 32-bit integer arithmetic, the parameters and the result will still be a Minecraft scoreboard value, or a signed 32-bit integer. Thus, it is not possible to directly use this output. Pretend that there is a leading '1' bit if the scoreboard value is negative. You could also use the ```hmmm:bitwise/32/signed/to_bits/main``` function to create a 32-bit little endian boolean array hmmm_io.R\[0..31\].
 
 Functions that take in two parameters will take:  
-io.P\[0, 1\] as inputs and hmmm_io.R0, hmmm_io.R1 (if applicable) as output.  
+hmmm_io.P\[0, 1\] as inputs and hmmm_io.R0, hmmm_io.R1 (if applicable) as output.  
 
 ***Example Usage***  
 To perform ```1+1```:  
@@ -157,20 +157,20 @@ hmmm:float/32/compare/equal
 hmmm:float/32/compare/greater
 hmmm:float/32/compare/greater_equal
 
-hmmm:extended_float/32/compare/floor
-hmmm:extended_float/32/compare/ceiling
-hmmm:extended_float/32/compare/truncate
-hmmm:extended_float/32/compare/log
-hmmm:extended_float/32/compare/exponential
-hmmm:extended_float/32/compare/power
-hmmm:extended_float/32/compare/root
-hmmm:extended_float/32/compare/fast_inverse_sqrt
-hmmm:extended_float/32/compare/sin
-hmmm:extended_float/32/compare/cos
-hmmm:extended_float/32/compare/tan
-hmmm:extended_float/32/compare/asin
-hmmm:extended_float/32/compare/acos
-hmmm:extended_float/32/compare/atan
+hmmm:extended_float/32/floor
+hmmm:extended_float/32/ceiling
+hmmm:extended_float/32/truncate
+hmmm:extended_float/32/log
+hmmm:extended_float/32/exponential
+hmmm:extended_float/32/power
+hmmm:extended_float/32/root
+hmmm:extended_float/32/fast_inverse_sqrt
+hmmm:extended_float/32/sin
+hmmm:extended_float/32/cos
+hmmm:extended_float/32/tan
+hmmm:extended_float/32/asin
+hmmm:extended_float/32/acos
+hmmm:extended_float/32/atan
 
 ```
 
