@@ -1,4 +1,4 @@
-#> unit_tests:float/convert_to_storage
+#> hmmm:tests/float/convert_to_storage
 #   Test the float storage conversion function
 ##
 

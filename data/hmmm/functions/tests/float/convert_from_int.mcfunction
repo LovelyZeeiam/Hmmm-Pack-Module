@@ -1,4 +1,4 @@
-#> unit_tests:float/convert_from_int
+#> hmmm:tests/float/convert_from_int
 #   Test float addition
 ##
 

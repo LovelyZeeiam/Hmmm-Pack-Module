@@ -1,4 +1,4 @@
-#> unit_tests:float/decompose
+#> hmmm:tests/float/decompose
 #   Test the float decomposition function
 ##
 

@@ -1,4 +1,4 @@
-#> unit_tests:float/check_number_type
+#> hmmm:tests/float/check_number_type
 #   Test the float check_type function
 ##
 

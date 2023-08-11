@@ -1,4 +1,4 @@
-#> unit_tests:extended_float/exponent
+#> hmmm:tests/extended_float/exponent
 #   Test float exponentation
 ##
 

@@ -1,4 +1,4 @@
-#> unit_tests:extended_float/float_type
+#> hmmm:tests/extended_float/float_type
 #   Test the float check_type function
 ##
 

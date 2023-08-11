@@ -1,4 +1,4 @@
-#> unit_tests:extended_float/power
+#> hmmm:tests/extended_float/power
 #   Test float power
 ##
 
