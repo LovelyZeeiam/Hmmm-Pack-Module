@@ -8,7 +8,7 @@ Another useful function of this library is that it lets you easily create lists 
 If you want to make it a submodule of your pack, please read the LICENSE first, then add the "pack-module" branch as a submodule with the directory name "hmmm":
 
 ```
-git submodule add https://github.com/LovelyZeeiam/Hmmm-Pack-Module.git -b pack-module --name hmmm data/
+git submodule add -b pack-module https://github.com/LovelyZeeiam/Hmmm-Pack-Module.git data/hmmm/
 ```
 
 # lingo
