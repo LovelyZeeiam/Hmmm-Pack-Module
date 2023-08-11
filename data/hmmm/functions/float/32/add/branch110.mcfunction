@@ -5,9 +5,9 @@
 function hmmm:float/32/add/branch1101
 
 # if significand is 0, return F0
-scoreboard players operation R0 io = 0 temp
-scoreboard players operation R1 io = 1 temp
-scoreboard players operation R2 io = 2 temp
+scoreboard players operation R0 hmmm_io = 0 temp
+scoreboard players operation R1 hmmm_io = 1 temp
+scoreboard players operation R2 hmmm_io = 2 temp
 
 # if significand is not 0, repeat from branch11
 execute unless score 7 temp matches 0 run function hmmm:float/32/add/branch11

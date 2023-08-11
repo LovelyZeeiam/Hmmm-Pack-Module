@@ -2,5 +2,5 @@
 #   sub mantissa add exponent
 #
 
-scoreboard players add R1 io 1
-scoreboard players remove R2 io 8388608
+scoreboard players add R1 hmmm_io 1
+scoreboard players remove R2 hmmm_io 8388608

@@ -2,10 +2,10 @@
 #   Performs a leftwards bitwise shift
 ##
 # @params
-#   io.P0
+#   hmmm_io.P0
 #       32-bit integers
 # @returns
-#   io.R0
+#   hmmm_io.R0
 #       32-bit integer
 ##
 

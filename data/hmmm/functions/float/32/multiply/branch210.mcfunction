@@ -3,12 +3,12 @@
 #
 
 # fix sign
-scoreboard players set R0 io 0
-execute unless score 0 temp = 3 temp run scoreboard players set R0 io 1
+scoreboard players set R0 hmmm_io 0
+execute unless score 0 temp = 3 temp run scoreboard players set R0 hmmm_io 1
 
 
 # set exponent
-scoreboard players operation R1 io = 1 temp
+scoreboard players operation R1 hmmm_io = 1 temp
 
 # add implicit bit
 
@@ -19,7 +19,7 @@ execute unless score 4 temp matches 2 run scoreboard players add 5 temp 8388608
 execute if score 4 temp matches 2 run function hmmm:float/32/multiply/branch2101
 
 
-execute if score R1 io matches -125.. if score 4 temp matches 1..2 run function hmmm:float/32/multiply/branch2102
+execute if score R1 hmmm_io matches -125.. if score 4 temp matches 1..2 run function hmmm:float/32/multiply/branch2102
 
 
 # multiply using the factoring thing
@@ -37,10 +37,10 @@ scoreboard players operation 3 temp = 5 temp
 scoreboard players operation 2 temp /= 4096 constant
 scoreboard players operation 3 temp %= 4096 constant
 
-# set io.R2 to ac
-scoreboard players operation R2 io = 0 temp
-scoreboard players operation R2 io *= 2 temp
-scoreboard players operation R2 io *= 2 constant
+# set hmmm_io.R2 to ac
+scoreboard players operation R2 hmmm_io = 0 temp
+scoreboard players operation R2 hmmm_io *= 2 temp
+scoreboard players operation R2 hmmm_io *= 2 constant
 
 # bc
 # set temp.5 to bc
@@ -64,14 +64,14 @@ scoreboard players operation 5 temp += 6 temp
 
 # right bitshift shift by 3
 scoreboard players operation 5 temp /= 2048 constant
-scoreboard players operation R2 io += 5 temp
+scoreboard players operation R2 hmmm_io += 5 temp
 
-execute if score R2 io matches 16777216.. run function hmmm:float/32/multiply/branch2100
+execute if score R2 hmmm_io matches 16777216.. run function hmmm:float/32/multiply/branch2100
 
 # fix denormalized numbers
-execute if score R1 io matches -125.. unless score R2 io matches 8388608.. run function hmmm:float/32/multiply/branch2103
+execute if score R1 hmmm_io matches -125.. unless score R2 hmmm_io matches 8388608.. run function hmmm:float/32/multiply/branch2103
 
-execute if score R1 io matches -126 unless score R2 io matches 8388608.. run scoreboard players set R1 io -127
+execute if score R1 hmmm_io matches -126 unless score R2 hmmm_io matches 8388608.. run scoreboard players set R1 hmmm_io -127
 
 # remove implicit bit
-execute if score 8 temp matches 0 if score R2 io matches 8388608.. run scoreboard players remove R2 io 8388608
+execute if score 8 temp matches 0 if score R2 hmmm_io matches 8388608.. run scoreboard players remove R2 hmmm_io 8388608

@@ -3,57 +3,57 @@
 
 # Convert e^x to 2^((1/ln2)(2^(E-23)(2^23+m)))
 
-# Get (2^(E-23)(2^23+m)) (already loaded into io.P[0..2])
+# Get (2^(E-23)(2^23+m)) (already loaded into hmmm_io.P[0..2])
 
 # Multiply this by 1/ln2
 
-scoreboard players set P3 io 0
-scoreboard players set P4 io 0
-scoreboard players set P5 io 3713595
+scoreboard players set P3 hmmm_io 0
+scoreboard players set P4 hmmm_io 0
+scoreboard players set P5 hmmm_io 3713595
 
 function hmmm:float/32/multiply/main
 
-# Set io.P[1..2] from io.R[1..2]
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+# Set hmmm_io.P[1..2] from hmmm_io.R[1..2]
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 
 # Now we have sign((1/ln2)(2^(E-23))(2^23+m)
 
 # save this to temp.[0..2]
-scoreboard players operation 11 temp = P0 io
-scoreboard players operation 12 temp = P1 io
-scoreboard players operation 13 temp = P2 io
+scoreboard players operation 11 temp = P0 hmmm_io
+scoreboard players operation 12 temp = P1 hmmm_io
+scoreboard players operation 13 temp = P2 hmmm_io
 
 # Split integer and decimal part (note decimal is in [0,1))
 
 function hmmm:extended_float/32/floor/main
 
 # I+d
-scoreboard players operation P0 io = 11 temp
-scoreboard players operation P1 io = 12 temp
-scoreboard players operation P2 io = 13 temp
+scoreboard players operation P0 hmmm_io = 11 temp
+scoreboard players operation P1 hmmm_io = 12 temp
+scoreboard players operation P2 hmmm_io = 13 temp
 
 # integer part
-scoreboard players operation P3 io = R0 io
-scoreboard players operation P4 io = R1 io
-scoreboard players operation P5 io = R2 io
+scoreboard players operation P3 hmmm_io = R0 hmmm_io
+scoreboard players operation P4 hmmm_io = R1 hmmm_io
+scoreboard players operation P5 hmmm_io = R2 hmmm_io
 
 # Save integer part
-scoreboard players operation 11 temp = R0 io
-scoreboard players operation 12 temp = R1 io
-scoreboard players operation 13 temp = R2 io
+scoreboard players operation 11 temp = R0 hmmm_io
+scoreboard players operation 12 temp = R1 hmmm_io
+scoreboard players operation 13 temp = R2 hmmm_io
 
 function hmmm:float/32/subtract/main
 # save decimal part
-scoreboard players operation 14 temp = R0 io
-scoreboard players operation 15 temp = R1 io
-scoreboard players operation 16 temp = R2 io
+scoreboard players operation 14 temp = R0 hmmm_io
+scoreboard players operation 15 temp = R1 hmmm_io
+scoreboard players operation 16 temp = R2 hmmm_io
 
 # Check if exponent is greater than what floats can handle:
-scoreboard players operation P0 io = 11 temp
-scoreboard players operation P1 io = 12 temp
-scoreboard players operation P2 io = 13 temp
+scoreboard players operation P0 hmmm_io = 11 temp
+scoreboard players operation P1 hmmm_io = 12 temp
+scoreboard players operation P2 hmmm_io = 13 temp
 
 # If positive, check if integer part is greater or equal to 128
 execute if score 11 temp matches 0 run function hmmm:extended_float/32/exponential/positive

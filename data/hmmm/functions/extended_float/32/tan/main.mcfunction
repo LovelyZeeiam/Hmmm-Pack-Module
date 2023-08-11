@@ -2,12 +2,12 @@
 #   Return the tangent of the 32-bit float
 ##
 # @params
-#   io.P[0, 1, 2]
+#   hmmm_io.P[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 # @returns
-#   io.R[0, 1, 2]
+#   hmmm_io.R[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 #
 
-execute if score P1 io matches 128 run function hmmm:extended_float/32/sin/nan
-execute unless score P1 io matches 128 run function hmmm:extended_float/32/tan/real
+execute if score P1 hmmm_io matches 128 run function hmmm:extended_float/32/sin/nan
+execute unless score P1 hmmm_io matches 128 run function hmmm:extended_float/32/tan/real

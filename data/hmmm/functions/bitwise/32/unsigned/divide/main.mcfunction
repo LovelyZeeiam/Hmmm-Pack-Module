@@ -1,11 +1,11 @@
 #> hmmm:bitwise/32/unsigned/divide/main
-#   Return the unsigned quotient of io.P[0, 1]
+#   Return the unsigned quotient of hmmm_io.P[0, 1]
 ##
 # @params
-#   io.P[0, 1]
+#   hmmm_io.P[0, 1]
 #       Two 32-bit integers
 # @returns
-#   io.R0
+#   hmmm_io.R0
 #       32-bit integer
 ##
 

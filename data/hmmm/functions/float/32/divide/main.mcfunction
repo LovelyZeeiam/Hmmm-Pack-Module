@@ -2,35 +2,35 @@
 #   Return the quotient of two 32-bit floats
 ##
 # @params
-#   io.P[0, 1, 2]
+#   hmmm_io.P[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
-#   io.P[3, 4, 5]
+#   hmmm_io.P[3, 4, 5]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 # @returns
-#   io.R[0, 1, 2]
+#   hmmm_io.R[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 ##
 # @modifies temp.[0..8]
 
 # make a copy of everything
-scoreboard players operation 0 temp = P0 io
-scoreboard players operation 1 temp = P1 io
-scoreboard players operation 2 temp = P2 io
+scoreboard players operation 0 temp = P0 hmmm_io
+scoreboard players operation 1 temp = P1 hmmm_io
+scoreboard players operation 2 temp = P2 hmmm_io
 
-scoreboard players operation 3 temp = P3 io
-scoreboard players operation 4 temp = P4 io
-scoreboard players operation 5 temp = P5 io
+scoreboard players operation 3 temp = P3 hmmm_io
+scoreboard players operation 4 temp = P4 hmmm_io
+scoreboard players operation 5 temp = P5 hmmm_io
 
 # check types for both
 function hmmm:float/32/check_type/main
-scoreboard players operation 6 temp = R0 io
+scoreboard players operation 6 temp = R0 hmmm_io
 
-scoreboard players operation P0 io = 3 temp
-scoreboard players operation P1 io = 4 temp
-scoreboard players operation P2 io = 5 temp
+scoreboard players operation P0 hmmm_io = 3 temp
+scoreboard players operation P1 hmmm_io = 4 temp
+scoreboard players operation P2 hmmm_io = 5 temp
 
 function hmmm:float/32/check_type/main
-scoreboard players operation 7 temp = R0 io
+scoreboard players operation 7 temp = R0 hmmm_io
 
 # if...else handler
 scoreboard players set 8 temp 0

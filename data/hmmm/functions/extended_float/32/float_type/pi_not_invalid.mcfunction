@@ -3,7 +3,7 @@
 
 # magic 2
 # copy it back
-scoreboard players operation P2 io = P0 io
-scoreboard players remove P1 io 1
+scoreboard players operation P2 hmmm_io = P0 hmmm_io
+scoreboard players remove P1 hmmm_io 1
 function hmmm:extended_float/32/truncate/b/main
-execute if score P2 io matches 1.. run scoreboard players set R0 io 1
+execute if score P2 hmmm_io matches 1.. run scoreboard players set R0 hmmm_io 1

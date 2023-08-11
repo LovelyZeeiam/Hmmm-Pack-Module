@@ -2,8 +2,8 @@
 #   Case when the exponent is 1 (return self)
 #
 
-scoreboard players operation R0 io = P0 io
-scoreboard players operation R1 io = P1 io
-scoreboard players operation R2 io = P2 io
+scoreboard players operation R0 hmmm_io = P0 hmmm_io
+scoreboard players operation R1 hmmm_io = P1 hmmm_io
+scoreboard players operation R2 hmmm_io = P2 hmmm_io
 
 scoreboard players set 0 temp 0

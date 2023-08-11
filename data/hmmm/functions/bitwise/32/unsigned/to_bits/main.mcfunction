@@ -2,10 +2,10 @@
 #   Convert integer into 32-bit boolean array (little endian)
 ##
 # @params
-#   io.P0
+#   hmmm_io.P0
 #       32-bit integer
 # @returns
-#   io.R[0..31]
+#   hmmm_io.R[0..31]
 #       32-bit array of boolean values
 ##
 

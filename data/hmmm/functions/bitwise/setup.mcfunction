@@ -1,6 +1,6 @@
 #> hmmm:bitwise/setup
 
-scoreboard objectives add io dummy
+scoreboard objectives add hmmm_io dummy
 scoreboard objectives add temp dummy
 
 scoreboard objectives add constant dummy

@@ -1,17 +1,17 @@
 # Use inverse of fast inverse sqrt
-scoreboard players operation P0 io = P3 io
-scoreboard players operation P1 io = P4 io
-scoreboard players operation P2 io = P5 io
+scoreboard players operation P0 hmmm_io = P3 hmmm_io
+scoreboard players operation P1 hmmm_io = P4 hmmm_io
+scoreboard players operation P2 hmmm_io = P5 hmmm_io
 
 function hmmm:extended_float/32/fast_inverse_sqrt/main
 
-scoreboard players set P0 io 0
-scoreboard players set P1 io 0
-scoreboard players set P2 io 0
+scoreboard players set P0 hmmm_io 0
+scoreboard players set P1 hmmm_io 0
+scoreboard players set P2 hmmm_io 0
 
-scoreboard players operation P3 io = R0 io
-scoreboard players operation P4 io = R1 io
-scoreboard players operation P5 io = R2 io
+scoreboard players operation P3 hmmm_io = R0 hmmm_io
+scoreboard players operation P4 hmmm_io = R1 hmmm_io
+scoreboard players operation P5 hmmm_io = R2 hmmm_io
 
 function hmmm:float/32/divide/main
 

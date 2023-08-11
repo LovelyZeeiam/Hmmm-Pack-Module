@@ -3,15 +3,15 @@
 #
 
 # fix sign
-scoreboard players set R0 io 0
-execute unless score 0 temp = 3 temp run scoreboard players set R0 io 1
+scoreboard players set R0 hmmm_io 0
+execute unless score 0 temp = 3 temp run scoreboard players set R0 hmmm_io 1
 
 # add implicit bit
 scoreboard players add 2 temp 8388608
 scoreboard players add 5 temp 8388608
 
 # set exponent
-scoreboard players operation R1 io = 1 temp
+scoreboard players operation R1 hmmm_io = 1 temp
 
 # multiply using the factoring thing
 
@@ -28,10 +28,10 @@ scoreboard players operation 3 temp = 5 temp
 scoreboard players operation 2 temp /= 4096 constant
 scoreboard players operation 3 temp %= 4096 constant
 
-# set io.R2 to ac
-scoreboard players operation R2 io = 0 temp
-scoreboard players operation R2 io *= 2 temp
-scoreboard players operation R2 io *= 2 constant
+# set hmmm_io.R2 to ac
+scoreboard players operation R2 hmmm_io = 0 temp
+scoreboard players operation R2 hmmm_io *= 2 temp
+scoreboard players operation R2 hmmm_io *= 2 constant
 
 # bc
 # set temp.5 to bc
@@ -56,10 +56,10 @@ scoreboard players operation 5 temp += 6 temp
 
 # right bitshift shift by 3
 scoreboard players operation 5 temp /= 131072 constant
-scoreboard players operation R2 io += 5 temp
+scoreboard players operation R2 hmmm_io += 5 temp
 
-execute if score R2 io matches 16777216.. run function hmmm:float/32/multiply/branch2100
+execute if score R2 hmmm_io matches 16777216.. run function hmmm:float/32/multiply/branch2100
 
 
 # remove implicit bit
-scoreboard players remove R2 io 8388608
+scoreboard players remove R2 hmmm_io 8388608

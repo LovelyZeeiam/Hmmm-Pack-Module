@@ -9,17 +9,17 @@ function u_test:run/reset
 # 361.632 -> 361
 scoreboard players set expected u_test 1135902720
 
-scoreboard players set P0 io 1135923429
+scoreboard players set P0 hmmm_io 1135923429
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -27,17 +27,17 @@ function u_test:run/score
 # 689432.4375 -> 689432
 scoreboard players set expected u_test 1227379072
 
-scoreboard players set P0 io 1227379079
+scoreboard players set P0 hmmm_io 1227379079
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -45,17 +45,17 @@ function u_test:run/score
 # -361.632 -> -362
 scoreboard players set expected u_test -1011548160
 
-scoreboard players set P0 io -1011560219
+scoreboard players set P0 hmmm_io -1011560219
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -63,17 +63,17 @@ function u_test:run/score
 # -689432.4375 -> -689433
 scoreboard players set expected u_test -920104560
 
-scoreboard players set P0 io -920104569
+scoreboard players set P0 hmmm_io -920104569
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -81,17 +81,17 @@ function u_test:run/score
 # 0 -> 0
 scoreboard players set expected u_test 0
 
-scoreboard players set P0 io 0
+scoreboard players set P0 hmmm_io 0
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -99,17 +99,17 @@ function u_test:run/score
 # 700 -> 700
 scoreboard players set expected u_test 1143930880
 
-scoreboard players set P0 io 1143930880
+scoreboard players set P0 hmmm_io 1143930880
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -118,17 +118,17 @@ function u_test:run/score
 # In origin pack, this assertion also tests.
 scoreboard players set expected u_test -2147483648
 
-scoreboard players set P0 io -2147483648
+scoreboard players set P0 hmmm_io -2147483648
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -136,17 +136,17 @@ function u_test:run/score
 # -700 -> -700
 scoreboard players set expected u_test -1003552768
 
-scoreboard players set P0 io -1003552768
+scoreboard players set P0 hmmm_io -1003552768
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 
@@ -154,17 +154,17 @@ function u_test:run/score
 # 0.72134752044 -> 0
 scoreboard players set expected u_test 0
 
-scoreboard players set P0 io 1060678203
+scoreboard players set P0 hmmm_io 1060678203
 function hmmm:float/32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:extended_float/32/floor/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
+scoreboard players operation P0 hmmm_io = R0 hmmm_io
+scoreboard players operation P1 hmmm_io = R1 hmmm_io
+scoreboard players operation P2 hmmm_io = R2 hmmm_io
 function hmmm:float/32/recompose/main
-scoreboard players operation actual u_test = R0 io
+scoreboard players operation actual u_test = R0 hmmm_io
 
 function u_test:run/score
 

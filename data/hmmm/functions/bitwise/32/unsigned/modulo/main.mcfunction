@@ -1,13 +1,13 @@
 #> hmmm:bitwise/32/unsigned/modulo/main
-#   Return the unsigned modulo of io.P[0, 1]
+#   Return the unsigned modulo of hmmm_io.P[0, 1]
 ##
 # @params
-#   io.P[0, 1]
+#   hmmm_io.P[0, 1]
 #       Two 32-bit integers
 # @returns
-#   io.R0
+#   hmmm_io.R0
 #       32-bit integer
 ##
 
 function hmmm:bitwise/32/unsigned/divmod/main
-scoreboard players operation R0 io = R1 io
+scoreboard players operation R0 hmmm_io = R1 hmmm_io

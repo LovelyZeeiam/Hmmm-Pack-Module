@@ -2,5 +2,5 @@
 #   Case when the base is negative and exponent is an odd integer
 #
 
-scoreboard players add R0 io 1
-execute if score R0 io matches 2 run scoreboard players set R0 io 0
+scoreboard players add R0 hmmm_io 1
+execute if score R0 hmmm_io matches 2 run scoreboard players set R0 hmmm_io 0

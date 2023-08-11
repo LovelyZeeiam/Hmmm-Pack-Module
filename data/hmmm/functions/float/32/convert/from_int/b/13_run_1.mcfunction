@@ -1,2 +1,2 @@
-scoreboard players operation P2 io *= 128 constant
-scoreboard players set P1 io 16
+scoreboard players operation P2 hmmm_io *= 128 constant
+scoreboard players set P1 hmmm_io 16

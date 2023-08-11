@@ -2,47 +2,47 @@
 #   Convert integer into 32-bit boolean array (little endian)
 ##
 # @params
-#   io.P0
+#   hmmm_io.P0
 #       32-bit integer
 # @returns
-#   io.R[0..31]
+#   hmmm_io.R[0..31]
 #       32-bit array of boolean values
 ##
 
-scoreboard players operation 0 temp = P0 io
+scoreboard players operation 0 temp = P0 hmmm_io
 
-scoreboard players set R0 io 0
-scoreboard players set R1 io 0
-scoreboard players set R2 io 0
-scoreboard players set R3 io 0
-scoreboard players set R4 io 0
-scoreboard players set R5 io 0
-scoreboard players set R6 io 0
-scoreboard players set R7 io 0
-scoreboard players set R8 io 0
-scoreboard players set R9 io 0
-scoreboard players set R10 io 0
-scoreboard players set R11 io 0
-scoreboard players set R12 io 0
-scoreboard players set R13 io 0
-scoreboard players set R14 io 0
-scoreboard players set R15 io 0
-scoreboard players set R16 io 0
-scoreboard players set R17 io 0
-scoreboard players set R18 io 0
-scoreboard players set R19 io 0
-scoreboard players set R20 io 0
-scoreboard players set R21 io 0
-scoreboard players set R22 io 0
-scoreboard players set R23 io 0
-scoreboard players set R24 io 0
-scoreboard players set R25 io 0
-scoreboard players set R26 io 0
-scoreboard players set R27 io 0
-scoreboard players set R28 io 0
-scoreboard players set R29 io 0
-scoreboard players set R30 io 0
-scoreboard players set R31 io 0
+scoreboard players set R0 hmmm_io 0
+scoreboard players set R1 hmmm_io 0
+scoreboard players set R2 hmmm_io 0
+scoreboard players set R3 hmmm_io 0
+scoreboard players set R4 hmmm_io 0
+scoreboard players set R5 hmmm_io 0
+scoreboard players set R6 hmmm_io 0
+scoreboard players set R7 hmmm_io 0
+scoreboard players set R8 hmmm_io 0
+scoreboard players set R9 hmmm_io 0
+scoreboard players set R10 hmmm_io 0
+scoreboard players set R11 hmmm_io 0
+scoreboard players set R12 hmmm_io 0
+scoreboard players set R13 hmmm_io 0
+scoreboard players set R14 hmmm_io 0
+scoreboard players set R15 hmmm_io 0
+scoreboard players set R16 hmmm_io 0
+scoreboard players set R17 hmmm_io 0
+scoreboard players set R18 hmmm_io 0
+scoreboard players set R19 hmmm_io 0
+scoreboard players set R20 hmmm_io 0
+scoreboard players set R21 hmmm_io 0
+scoreboard players set R22 hmmm_io 0
+scoreboard players set R23 hmmm_io 0
+scoreboard players set R24 hmmm_io 0
+scoreboard players set R25 hmmm_io 0
+scoreboard players set R26 hmmm_io 0
+scoreboard players set R27 hmmm_io 0
+scoreboard players set R28 hmmm_io 0
+scoreboard players set R29 hmmm_io 0
+scoreboard players set R30 hmmm_io 0
+scoreboard players set R31 hmmm_io 0
 
 execute if score 0 temp matches ..-1 run function hmmm:bitwise/32/signed/to_bits/r31
 execute if score 0 temp matches 1073741824.. run function hmmm:bitwise/32/signed/to_bits/r30
@@ -75,4 +75,4 @@ execute if score 0 temp matches 16.. run function hmmm:bitwise/32/signed/to_bits
 execute if score 0 temp matches 8.. run function hmmm:bitwise/32/signed/to_bits/r3
 execute if score 0 temp matches 4.. run function hmmm:bitwise/32/signed/to_bits/r2
 execute if score 0 temp matches 2.. run function hmmm:bitwise/32/signed/to_bits/r1
-execute if score 0 temp matches 1.. run scoreboard players set R0 io 1
+execute if score 0 temp matches 1.. run scoreboard players set R0 hmmm_io 1

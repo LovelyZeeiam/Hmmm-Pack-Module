@@ -1,4 +1,4 @@
-execute if score P0 io matches 0..127 run function hmmm:float/32/convert/from_int/b/1
-execute if score P0 io matches 128..32767 run function hmmm:float/32/convert/from_int/b/2
-execute if score P0 io matches 32768..8388607 run function hmmm:float/32/convert/from_int/b/3
-execute if score P0 io matches 8388608..2147483647 run function hmmm:float/32/convert/from_int/b/4
+execute if score P0 hmmm_io matches 0..127 run function hmmm:float/32/convert/from_int/b/1
+execute if score P0 hmmm_io matches 128..32767 run function hmmm:float/32/convert/from_int/b/2
+execute if score P0 hmmm_io matches 32768..8388607 run function hmmm:float/32/convert/from_int/b/3
+execute if score P0 hmmm_io matches 8388608..2147483647 run function hmmm:float/32/convert/from_int/b/4
