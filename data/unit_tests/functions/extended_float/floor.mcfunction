@@ -115,6 +115,7 @@ function u_test:run/score
 
 # test 7
 # -0 -> -0
+# In origin pack, this assertion also tests.
 scoreboard players set expected u_test -2147483648
 
 scoreboard players set P0 io -2147483648
