@@ -1,4 +1,4 @@
-#> extended_float:32/fast_inverse_sqrt/nan
+#> hmmm:bitwise/extended_float/32/fast_inverse_sqrt/nan
 #   Case when radicand is negative
 #
 

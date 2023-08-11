@@ -1,4 +1,4 @@
-#> bitwise:32/unsigned/divide/main
+#> hmmm:bitwise/32/unsigned/divide/main
 #   Return the unsigned quotient of io.P[0, 1]
 ##
 # @params
@@ -9,4 +9,4 @@
 #       32-bit integer
 ##
 
-function bitwise:32/unsigned/divmod/main
+function hmmm:bitwise/32/unsigned/divmod/main

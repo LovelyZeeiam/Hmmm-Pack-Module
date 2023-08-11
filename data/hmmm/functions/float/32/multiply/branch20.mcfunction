@@ -1,4 +1,4 @@
-#> float:32/multiply/branch20
+#> hmmm:bitwise/float/32/multiply/branch20
 #   Set to infinity
 #
 

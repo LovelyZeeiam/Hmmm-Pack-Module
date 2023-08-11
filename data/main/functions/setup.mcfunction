@@ -1,3 +1,3 @@
-function extended_float:setup
-function float:setup
-function bitwise:setup
+function hmmm:bitwise/extended_float/setup
+function hmmm:bitwise/float/setup
+function hmmm:bitwise/setup

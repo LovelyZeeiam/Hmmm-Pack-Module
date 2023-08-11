@@ -1,4 +1,4 @@
-#> extended_float:32/fast_inverse_sqrt/inf
+#> hmmm:bitwise/extended_float/32/fast_inverse_sqrt/inf
 #   Case when radicand is zero
 #
 

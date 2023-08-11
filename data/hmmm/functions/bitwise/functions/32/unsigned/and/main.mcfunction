@@ -1,4 +1,4 @@
-#> bitwise:32/unsigned/and/main
+#> hmmm:bitwise/32/unsigned/and/main
 #   Return the bitwise and of io.P[0, 1]
 ##
 # @params
@@ -10,4 +10,4 @@
 ##
 
 # its the same as signed
-function bitwise:32/signed/and/main
+function hmmm:bitwise/32/signed/and/main

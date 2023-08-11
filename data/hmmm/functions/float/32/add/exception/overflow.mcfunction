@@ -1,4 +1,4 @@
-#> float:32/add/exception/overflow
+#> hmmm:bitwise/float/32/add/exception/overflow
 #   Throw a overflow exception
 ##
 

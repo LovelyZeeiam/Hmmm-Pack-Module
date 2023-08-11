@@ -1,4 +1,4 @@
-#> extended_float:32/power/integer_exponent/negative
+#> hmmm:bitwise/extended_float/32/power/integer_exponent/negative
 #   Case when the exponent is negative
 #
 
@@ -14,7 +14,7 @@ scoreboard players set P0 io 0
 scoreboard players set P1 io 0
 scoreboard players set P2 io 0
 
-function float:32/divide/main
+function hmmm:bitwise/float/32/divide/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
@@ -24,6 +24,6 @@ scoreboard players set P3 io 0
 scoreboard players operation P4 io = 10 temp
 scoreboard players operation P5 io = 11 temp
 
-function extended_float:32/power/integer_exponent/main
+function hmmm:bitwise/extended_float/32/power/integer_exponent/main
 
 scoreboard players set 0 temp 0

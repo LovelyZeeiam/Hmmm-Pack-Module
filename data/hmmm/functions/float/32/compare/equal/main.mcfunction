@@ -1,4 +1,4 @@
-#> float:32/compare/equal/main
+#> hmmm:bitwise/float/32/compare/equal/main
 #   Checks for equality between two floating point numbers
 ##
 # @params

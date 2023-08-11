@@ -1,8 +1,8 @@
-#> float:32/recompose/main
+#> hmmm:bitwise/float/32/recompose/main
 #   Return the 32-bit floating-point representation using
 #   io.P0 as a sign, io.P1 as an (signed) exponent and
 #   io.P2 as a (unsigned) significand
-#   Essentially the inverse of float:32/decompose/main
+#   Essentially the inverse of hmmm:bitwise/float/32/decompose/main
 ##
 # @params
 #   io.P[0, 1, 2]
@@ -23,4 +23,4 @@ scoreboard players operation R0 io *= 8388608 constant
 scoreboard players operation R0 io += P2 io
 
 # add the sign (add 2^31) if needed
-execute if score P0 io matches 1 run function float:32/recompose/replace_sign
+execute if score P0 io matches 1 run function hmmm:bitwise/float/32/recompose/replace_sign

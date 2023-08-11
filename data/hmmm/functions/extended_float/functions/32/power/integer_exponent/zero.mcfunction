@@ -1,4 +1,4 @@
-#> extended_float:32/power/integer_exponent/zero
+#> hmmm:bitwise/extended_float/32/power/integer_exponent/zero
 #   Case when the exponent is 0
 #
 

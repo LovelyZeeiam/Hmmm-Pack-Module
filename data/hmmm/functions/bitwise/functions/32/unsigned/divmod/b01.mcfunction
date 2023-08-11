@@ -1,5 +1,5 @@
-#> bitwise:32/unsigned/divmod/b01
-#   branch from bitwise:32/unsigned/divmod/b0
+#> hmmm:bitwise/32/unsigned/divmod/b01
+#   branch from hmmm:bitwise/32/unsigned/divmod/b0
 ##
 # io.R0 = div
 # io.R1 = mod
@@ -21,10 +21,10 @@ scoreboard players operation 0 temp *= 2 constant
 scoreboard players set 2 temp 0
 execute if score 0 temp matches ..-1 run scoreboard players set 2 temp 1
 execute if score 0 temp >= P1 io run scoreboard players set 2 temp 1
-execute if score 2 temp matches 1 run function bitwise:32/unsigned/divmod/b010
+execute if score 2 temp matches 1 run function hmmm:bitwise/32/unsigned/divmod/b010
 
 scoreboard players operation R1 io += 0 temp
 scoreboard players set 2 temp 0
 execute if score R1 io matches ..-1 run scoreboard players set 2 temp 1
 execute if score R1 io >= P1 io run scoreboard players set 2 temp 1
-execute if score 2 temp matches 1 run function bitwise:32/unsigned/divmod/b011
+execute if score 2 temp matches 1 run function hmmm:bitwise/32/unsigned/divmod/b011

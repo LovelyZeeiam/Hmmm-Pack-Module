@@ -1,4 +1,4 @@
-#> bitwise:32/signed/shift/left/main
+#> hmmm:bitwise/32/signed/shift/left/main
 #   Performs a leftwards bitwise shift
 ##
 # @params
@@ -10,7 +10,7 @@
 ##
 
 scoreboard players set 0 temp 0
-execute if score P0 io matches ..-1 run function bitwise:32/signed/shift/remove_sign
+execute if score P0 io matches ..-1 run function hmmm:bitwise/32/signed/shift/remove_sign
 
 scoreboard players operation R0 io = P0 io
 scoreboard players operation R0 io *= 2 constant

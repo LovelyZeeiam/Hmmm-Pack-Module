@@ -1,4 +1,4 @@
-#> extended_float:32/log/zero
+#> hmmm:bitwise/extended_float/32/log/zero
 #   Return -Inf when the input value is zero
 
 # NaN

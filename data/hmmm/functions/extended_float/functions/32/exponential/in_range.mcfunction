@@ -1,4 +1,4 @@
-#> extended_float:32/exponential/in_range
+#> hmmm:bitwise/extended_float/32/exponential/in_range
 # Handles exponentation when the exponent is in range
 #
 
@@ -9,8 +9,8 @@ scoreboard players operation P1 io = 12 temp
 scoreboard players operation P2 io = 13 temp
 
 scoreboard players set 0 temp 1
-execute if score P0 io matches 0 if score P1 io matches -127 if score P2 io matches 0 run function extended_float:32/exponential/floor_zero
-execute if score 0 temp matches 1 run function extended_float:32/exponential/floor_nonzero
+execute if score P0 io matches 0 if score P1 io matches -127 if score P2 io matches 0 run function hmmm:bitwise/extended_float/32/exponential/floor_zero
+execute if score 0 temp matches 1 run function hmmm:bitwise/extended_float/32/exponential/floor_nonzero
 
 # Decimal
 
@@ -24,7 +24,7 @@ scoreboard players set P3 io 0
 scoreboard players set P4 io -1
 scoreboard players set P5 io 0
 
-function float:32/subtract/main
+function hmmm:bitwise/float/32/subtract/main
 # copy output back to input
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
@@ -35,7 +35,7 @@ scoreboard players set P3 io 0
 scoreboard players set P4 io -1
 scoreboard players set P5 io 3240472
 
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # This is ln(2)(x-0.5). Save it to temp.[14..16]
 scoreboard players operation 14 temp = R0 io
@@ -55,7 +55,7 @@ scoreboard players operation P2 io = 16 temp
 scoreboard players set P3 io 0
 scoreboard players set P4 io 0
 scoreboard players set P5 io 0
-function float:32/add/main
+function hmmm:bitwise/float/32/add/main
 
 # save it to the accumulator
 scoreboard players operation 20 temp = R0 io
@@ -70,7 +70,7 @@ scoreboard players operation P2 io = 16 temp
 scoreboard players operation P3 io = 14 temp
 scoreboard players operation P4 io = 15 temp
 scoreboard players operation P5 io = 16 temp
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # Save this to temp.[17..19]
 scoreboard players operation 17 temp = R0 io
@@ -88,7 +88,7 @@ scoreboard players operation P3 io = 20 temp
 scoreboard players operation P4 io = 21 temp
 scoreboard players operation P5 io = 22 temp
 
-function float:32/add/main
+function hmmm:bitwise/float/32/add/main
 # save it to the accumulator
 scoreboard players operation 20 temp = R0 io
 scoreboard players operation 21 temp = R1 io
@@ -103,7 +103,7 @@ scoreboard players operation P2 io = 16 temp
 scoreboard players operation P3 io = 17 temp
 scoreboard players operation P4 io = 18 temp
 scoreboard players operation P5 io = 19 temp
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # Save this to temp.[6..8]
 scoreboard players operation 17 temp = R0 io
@@ -119,7 +119,7 @@ scoreboard players operation P2 io = R2 io
 scoreboard players set P3 io 0
 scoreboard players set P4 io 2
 scoreboard players set P5 io 4194304
-function float:32/divide/main
+function hmmm:bitwise/float/32/divide/main
 
 # add to accumulator
 scoreboard players operation P0 io = R0 io
@@ -130,7 +130,7 @@ scoreboard players operation P3 io = 20 temp
 scoreboard players operation P4 io = 21 temp
 scoreboard players operation P5 io = 22 temp
 
-function float:32/add/main
+function hmmm:bitwise/float/32/add/main
 # save it to the accumulator
 scoreboard players operation 20 temp = R0 io
 scoreboard players operation 21 temp = R1 io
@@ -145,7 +145,7 @@ scoreboard players operation P2 io = 16 temp
 scoreboard players operation P3 io = 17 temp
 scoreboard players operation P4 io = 18 temp
 scoreboard players operation P5 io = 19 temp
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # Save this to temp.[6..8]
 scoreboard players operation 17 temp = R0 io
@@ -161,7 +161,7 @@ scoreboard players operation P2 io = R2 io
 scoreboard players set P3 io 0
 scoreboard players set P4 io 4
 scoreboard players set P5 io 4194304
-function float:32/divide/main
+function hmmm:bitwise/float/32/divide/main
 
 # add to accumulator
 scoreboard players operation P0 io = R0 io
@@ -172,7 +172,7 @@ scoreboard players operation P3 io = 20 temp
 scoreboard players operation P4 io = 21 temp
 scoreboard players operation P5 io = 22 temp
 
-function float:32/add/main
+function hmmm:bitwise/float/32/add/main
 # save it to the accumulator
 scoreboard players operation 20 temp = R0 io
 scoreboard players operation 21 temp = R1 io
@@ -187,7 +187,7 @@ scoreboard players operation P2 io = 16 temp
 scoreboard players operation P3 io = 17 temp
 scoreboard players operation P4 io = 18 temp
 scoreboard players operation P5 io = 19 temp
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # Save this to temp.[6..8]
 scoreboard players operation 17 temp = R0 io
@@ -203,7 +203,7 @@ scoreboard players operation P2 io = R2 io
 scoreboard players set P3 io 0
 scoreboard players set P4 io 6
 scoreboard players set P5 io 7340032
-function float:32/divide/main
+function hmmm:bitwise/float/32/divide/main
 
 # add to accumulator
 scoreboard players operation P0 io = R0 io
@@ -214,7 +214,7 @@ scoreboard players operation P3 io = 20 temp
 scoreboard players operation P4 io = 21 temp
 scoreboard players operation P5 io = 22 temp
 
-function float:32/add/main
+function hmmm:bitwise/float/32/add/main
 # save it to the accumulator
 scoreboard players operation 20 temp = R0 io
 scoreboard players operation 21 temp = R1 io
@@ -229,7 +229,7 @@ scoreboard players operation P2 io = 16 temp
 scoreboard players operation P3 io = 17 temp
 scoreboard players operation P4 io = 18 temp
 scoreboard players operation P5 io = 19 temp
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # Save this to temp.[6..8]
 scoreboard players operation 17 temp = R0 io
@@ -245,7 +245,7 @@ scoreboard players operation P2 io = R2 io
 scoreboard players set P3 io 0
 scoreboard players set P4 io 9
 scoreboard players set P5 io 3407872
-function float:32/divide/main
+function hmmm:bitwise/float/32/divide/main
 
 # add to accumulator
 scoreboard players operation P0 io = R0 io
@@ -256,7 +256,7 @@ scoreboard players operation P3 io = 20 temp
 scoreboard players operation P4 io = 21 temp
 scoreboard players operation P5 io = 22 temp
 
-function float:32/add/main
+function hmmm:bitwise/float/32/add/main
 # save it to the accumulator
 scoreboard players operation 20 temp = R0 io
 scoreboard players operation 21 temp = R1 io
@@ -271,7 +271,7 @@ scoreboard players operation P2 io = 16 temp
 scoreboard players operation P3 io = 17 temp
 scoreboard players operation P4 io = 18 temp
 scoreboard players operation P5 io = 19 temp
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # Save this to temp.[6..8]
 scoreboard players operation 17 temp = R0 io
@@ -287,7 +287,7 @@ scoreboard players operation P2 io = R2 io
 scoreboard players set P3 io 0
 scoreboard players set P4 io 12
 scoreboard players set P5 io 1933312
-function float:32/divide/main
+function hmmm:bitwise/float/32/divide/main
 
 # add to accumulator
 scoreboard players operation P0 io = R0 io
@@ -298,7 +298,7 @@ scoreboard players operation P3 io = 20 temp
 scoreboard players operation P4 io = 21 temp
 scoreboard players operation P5 io = 22 temp
 
-function float:32/add/main
+function hmmm:bitwise/float/32/add/main
 # # save it to the accumulator
 # scoreboard players operation 20 temp = R0 io
 # scoreboard players operation 21 temp = R1 io
@@ -312,7 +312,7 @@ scoreboard players operation P2 io = R2 io
 scoreboard players set P3 io 0
 scoreboard players set P4 io 0
 scoreboard players set P5 io 3474675
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # Then multiply it to the integer part
 scoreboard players operation P0 io = 11 temp
@@ -322,6 +322,6 @@ scoreboard players operation P2 io = 13 temp
 scoreboard players operation P3 io = R0 io
 scoreboard players operation P4 io = R1 io
 scoreboard players operation P5 io = R2 io
-function float:32/multiply/main
+function hmmm:bitwise/float/32/multiply/main
 
 # And that's it!

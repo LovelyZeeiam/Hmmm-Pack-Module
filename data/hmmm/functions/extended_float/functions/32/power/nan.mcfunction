@@ -1,4 +1,4 @@
-#> extended_float:32/power/nan
+#> hmmm:bitwise/extended_float/32/power/nan
 #   Case when the base is negative and exponent is not an integer
 #
 

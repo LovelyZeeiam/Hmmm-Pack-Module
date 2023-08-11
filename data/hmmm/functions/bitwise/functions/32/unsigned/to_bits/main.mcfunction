@@ -1,4 +1,4 @@
-#> bitwise:32/unsigned/to_bits/main
+#> hmmm:bitwise/32/unsigned/to_bits/main
 #   Convert integer into 32-bit boolean array (little endian)
 ##
 # @params
@@ -10,4 +10,4 @@
 ##
 
 # its the same as signed
-function bitwise:32/signed/to_bits/main
+function hmmm:bitwise/32/signed/to_bits/main

@@ -1,4 +1,4 @@
-#> float:32/divide/branch2106
+#> hmmm:bitwise/float/32/divide/branch2106
 #   sub mantissa add exponent
 #
 

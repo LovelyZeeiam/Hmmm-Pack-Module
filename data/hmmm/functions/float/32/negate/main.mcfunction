@@ -1,4 +1,4 @@
-#> float:32/negate/main
+#> hmmm:bitwise/float/32/negate/main
 #   Return the negation of a 32-bit float
 ##
 # @params

@@ -1,4 +1,4 @@
-#> extended_float:32/power/integer_exponent/one
+#> hmmm:bitwise/extended_float/32/power/integer_exponent/one
 #   Case when the exponent is 1 (return self)
 #
 

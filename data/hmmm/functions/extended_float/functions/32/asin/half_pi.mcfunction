@@ -1,4 +1,4 @@
-#> extended_float:32/asin/half_pi
+#> hmmm:bitwise/extended_float/32/asin/half_pi
 #   Case when x=-1 or 1
 #
 

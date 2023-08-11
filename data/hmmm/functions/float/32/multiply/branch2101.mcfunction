@@ -1,4 +1,4 @@
-#> float:32/multiply/branch2101
+#> hmmm:bitwise/float/32/multiply/branch2101
 #   Swap significands so temp.2 is the smaller one
 #
 scoreboard players operation 0 temp = 2 temp

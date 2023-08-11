@@ -1,4 +1,4 @@
-#> bitwise:32/signed/modulo/main
+#> hmmm:bitwise/32/signed/modulo/main
 #   Return the signed modulo of io.P[0, 1]
 ##
 # @params

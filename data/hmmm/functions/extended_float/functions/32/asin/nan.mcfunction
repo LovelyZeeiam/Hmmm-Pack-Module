@@ -1,4 +1,4 @@
-#> extended_float:32/asin/nan
+#> hmmm:bitwise/extended_float/32/asin/nan
 #   Case when out of bounds
 #
 

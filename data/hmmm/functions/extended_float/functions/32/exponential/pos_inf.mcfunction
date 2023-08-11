@@ -1,4 +1,4 @@
-#> extended_float:32/exponential/pos_inf
+#> hmmm:bitwise/extended_float/32/exponential/pos_inf
 #
 
 scoreboard players set R0 io 0

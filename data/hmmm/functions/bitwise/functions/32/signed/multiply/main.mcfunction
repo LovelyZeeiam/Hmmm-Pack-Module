@@ -1,4 +1,4 @@
-#> bitwise:32/signed/multiply/main
+#> hmmm:bitwise/32/signed/multiply/main
 #   Return the product of io.P[0, 1]
 ##
 # @params

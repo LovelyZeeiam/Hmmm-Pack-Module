@@ -1,4 +1,4 @@
-#> bitwise:32/unsigned/shift/left/main
+#> hmmm:bitwise/32/unsigned/shift/left/main
 #   Performs a leftwards bitwise shift
 ##
 # @params
@@ -10,4 +10,4 @@
 ##
 
 # its the same as signed
-function bitwise:32/signed/shift/left/main
+function hmmm:bitwise/32/signed/shift/left/main

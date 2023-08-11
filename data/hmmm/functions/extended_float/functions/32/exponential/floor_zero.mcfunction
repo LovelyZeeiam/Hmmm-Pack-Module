@@ -1,4 +1,4 @@
-#> extended_float:32/exponential/floor_zero
+#> hmmm:bitwise/extended_float/32/exponential/floor_zero
 # Sets the exponent of a float to 0
 #
 

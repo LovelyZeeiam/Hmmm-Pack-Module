@@ -1,4 +1,4 @@
-#> float:32/divide/branch1
+#> hmmm:bitwise/float/32/divide/branch1
 #   Return 0
 #
 

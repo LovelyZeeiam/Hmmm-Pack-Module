@@ -1,4 +1,4 @@
-#> extended_float:32/sin/zero
+#> hmmm:bitwise/extended_float/32/sin/zero
 #   Sets the result to 0
 #
 

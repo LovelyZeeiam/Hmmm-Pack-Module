@@ -1,4 +1,4 @@
-#> float:32/check_type/zero
+#> hmmm:bitwise/float/32/check_type/zero
 #   branch for zeros
 ##
 

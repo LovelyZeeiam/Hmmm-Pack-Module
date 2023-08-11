@@ -1,2 +1,2 @@
-function float:uninstall
-function bitwise:uninstall
+function hmmm:bitwise/float/uninstall
+function hmmm:bitwise/uninstall

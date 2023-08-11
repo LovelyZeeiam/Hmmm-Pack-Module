@@ -1,5 +1,5 @@
-#> bitwise:32/unsigned/divmod/b1
-#   branch from bitwise:32/unsigned/divmod/main
+#> hmmm:bitwise/32/unsigned/divmod/b1
+#   branch from hmmm:bitwise/32/unsigned/divmod/main
 ##
 # io.R0 = div
 # io.R1 = mod

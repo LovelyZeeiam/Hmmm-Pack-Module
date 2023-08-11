@@ -1,4 +1,4 @@
-#> extended_float:32/exponential/floor_nonzero
+#> hmmm:bitwise/extended_float/32/exponential/floor_nonzero
 # Sets the exponent of a float to another float expressed as an integer
 #
 

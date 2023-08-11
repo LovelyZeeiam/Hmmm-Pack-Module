@@ -1,4 +1,4 @@
-#> bitwise:32/signed/divide/main
+#> hmmm:bitwise/32/signed/divide/main
 #   Return the signed quotient of io.P[0, 1]
 ##
 # @params

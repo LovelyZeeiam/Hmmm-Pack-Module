@@ -1,4 +1,4 @@
-#> float:32/divide/branch21
+#> hmmm:bitwise/float/32/divide/branch21
 #   Subtract exponents
 #
 
@@ -12,9 +12,9 @@ scoreboard players operation 1 temp -= 4 temp
 scoreboard players operation 4 temp = 8 temp
 scoreboard players set 8 temp 0
 # overflow
-execute if score 1 temp matches 129.. run function float:32/divide/exception/overflow
+execute if score 1 temp matches 129.. run function hmmm:bitwise/float/32/divide/exception/overflow
 # underflow
-execute if score 1 temp matches ..-128 run function float:32/divide/exception/underflow
+execute if score 1 temp matches ..-128 run function hmmm:bitwise/float/32/divide/exception/underflow
 
 # if working
-execute if score 8 temp matches 0 run function float:32/divide/branch210
+execute if score 8 temp matches 0 run function hmmm:bitwise/float/32/divide/branch210

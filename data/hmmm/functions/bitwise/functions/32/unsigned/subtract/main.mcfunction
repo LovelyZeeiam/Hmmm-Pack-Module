@@ -1,4 +1,4 @@
-#> bitwise:32/unsigned/subtract/main
+#> hmmm:bitwise/32/unsigned/subtract/main
 #   Return the difference of io.P[0, 1]
 ##
 # @params
@@ -10,4 +10,4 @@
 ##
 
 # its the same as signed
-function bitwise:32/signed/subtract/main
+function hmmm:bitwise/32/signed/subtract/main

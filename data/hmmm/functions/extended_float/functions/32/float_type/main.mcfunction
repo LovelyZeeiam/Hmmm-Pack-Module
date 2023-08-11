@@ -1,4 +1,4 @@
-#> extended_float:32/float_type/main
+#> hmmm:bitwise/extended_float/32/float_type/main
 #   Return whether a float is:
 #       An even integer
 #       An odd integer
@@ -15,5 +15,5 @@
 
 scoreboard players set R0 io 0
 execute if score P1 io matches -126..-1 run scoreboard players set R0 io 2
-execute if score P1 io matches 0 run function extended_float:32/float_type/one
-execute if score P1 io matches 1..22 run function extended_float:32/float_type/possible_integer
+execute if score P1 io matches 0 run function hmmm:bitwise/extended_float/32/float_type/one
+execute if score P1 io matches 1..22 run function hmmm:bitwise/extended_float/32/float_type/possible_integer

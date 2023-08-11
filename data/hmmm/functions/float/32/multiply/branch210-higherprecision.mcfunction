@@ -1,4 +1,4 @@
-#> float:32/multiply/branch210-higherprecision
+#> hmmm:bitwise/float/32/multiply/branch210-higherprecision
 #   Multiply significands with higher precision. Seems to be identical.
 #
 
@@ -58,7 +58,7 @@ scoreboard players operation 5 temp += 6 temp
 scoreboard players operation 5 temp /= 131072 constant
 scoreboard players operation R2 io += 5 temp
 
-execute if score R2 io matches 16777216.. run function float:32/multiply/branch2100
+execute if score R2 io matches 16777216.. run function hmmm:bitwise/float/32/multiply/branch2100
 
 
 # remove implicit bit

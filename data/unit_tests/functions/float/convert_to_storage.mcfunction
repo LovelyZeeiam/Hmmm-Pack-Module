@@ -11,11 +11,11 @@ function u_test:run/reset
 data modify storage u_test expected set value 5123.7412109375f
 
 scoreboard players set P0 io 1168121326
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -26,11 +26,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 64123635388758186968546937929728f
 
 scoreboard players set P0 io 1951028905
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -41,11 +41,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 2.52435519763e-29f
 
 scoreboard players set P0 io 268435457
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -56,11 +56,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 1.0f
 
 scoreboard players set P0 io 1065353216
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -71,11 +71,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 2.0f
 
 scoreboard players set P0 io 1073741824
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -86,11 +86,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 4.0f
 
 scoreboard players set P0 io 1082130432
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -101,11 +101,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 8.0f
 
 scoreboard players set P0 io 1090519040
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -116,11 +116,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 16.0f
 
 scoreboard players set P0 io 1098907648
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -131,11 +131,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 32.0f
 
 scoreboard players set P0 io 1107296256
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -145,11 +145,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 64.0f
 
 scoreboard players set P0 io 1115684864
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -159,11 +159,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 128.0f
 
 scoreboard players set P0 io 1124073472
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -173,11 +173,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 256.0f
 
 scoreboard players set P0 io 1132462080
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -186,11 +186,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 512.0f
 
 scoreboard players set P0 io 1140850688
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -199,11 +199,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 1024.0f
 
 scoreboard players set P0 io 1149239296
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -212,11 +212,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 2048.0f
 
 scoreboard players set P0 io 1157627904
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -225,11 +225,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 4096.0f
 
 scoreboard players set P0 io 1166016512
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -239,11 +239,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 0.0f
 
 scoreboard players set P0 io 0
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
@@ -253,11 +253,11 @@ function u_test:run/storage
 data modify storage u_test expected set value 1.0f
 
 scoreboard players set P0 io 1065353216
-function float:32/decompose/main
+function hmmm:bitwise/float/32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function float:32/convert/to_storage/main
+function hmmm:bitwise/float/32/convert/to_storage/main
 data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage

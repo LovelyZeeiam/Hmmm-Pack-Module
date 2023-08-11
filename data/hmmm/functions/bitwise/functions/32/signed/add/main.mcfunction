@@ -1,4 +1,4 @@
-#> bitwise:32/signed/add/main
+#> hmmm:bitwise/32/signed/add/main
 #   Return the sum of io.P[0, 1]
 ##
 # @params

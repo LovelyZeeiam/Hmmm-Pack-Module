@@ -1,4 +1,4 @@
-#> float:32/compare/less/branch0
+#> hmmm:bitwise/float/32/compare/less/branch0
 #   Signs are the same
 #
 

@@ -1,4 +1,4 @@
-#> bitwise:32/unsigned/add/main
+#> hmmm:bitwise/32/unsigned/add/main
 #   Return the sum of io.P[0, 1]
 ##
 # @params
@@ -10,4 +10,4 @@
 ##
 
 # its the same as signed
-function bitwise:32/signed/add/main
+function hmmm:bitwise/32/signed/add/main

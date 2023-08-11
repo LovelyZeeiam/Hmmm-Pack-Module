@@ -1,4 +1,4 @@
-#> extended_float:32/log/negative
+#> hmmm:bitwise/extended_float/32/log/negative
 #   Return NaN when the input value is negative
 
 # NaN

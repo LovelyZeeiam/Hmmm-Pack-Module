@@ -1,4 +1,4 @@
-#> extended_float:32/ceiling/one
+#> hmmm:bitwise/extended_float/32/ceiling/one
 # Sets the float to 1
 
 scoreboard players set R0 io 0

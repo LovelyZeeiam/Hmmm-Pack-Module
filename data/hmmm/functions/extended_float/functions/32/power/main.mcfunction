@@ -1,4 +1,4 @@
-#> extended_float:32/power/main
+#> hmmm:bitwise/extended_float/32/power/main
 #   Return the first 32-bit float raised to the power of the second.
 ##
 # @params
@@ -23,7 +23,7 @@ scoreboard players operation P0 io = P3 io
 scoreboard players operation P1 io = P4 io
 scoreboard players operation P2 io = P5 io
 
-function extended_float:32/float_type/main
+function hmmm:bitwise/extended_float/32/float_type/main
 
 scoreboard players operation P0 io = 0 temp
 scoreboard players operation P1 io = 1 temp
@@ -34,5 +34,5 @@ scoreboard players operation P4 io = 4 temp
 scoreboard players operation P5 io = 5 temp
 
 scoreboard players set 0 temp 1
-execute if score R0 io matches 2 run function extended_float:32/power/not_integer_exponent/main
-execute if score 0 temp matches 1 run function extended_float:32/power/integer_exponent/main
+execute if score R0 io matches 2 run function hmmm:bitwise/extended_float/32/power/not_integer_exponent/main
+execute if score 0 temp matches 1 run function hmmm:bitwise/extended_float/32/power/integer_exponent/main

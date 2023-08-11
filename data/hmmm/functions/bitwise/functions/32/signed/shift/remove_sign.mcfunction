@@ -1,4 +1,4 @@
-#> bitwise:32/signed/shift/remove_sign
+#> hmmm:bitwise/32/signed/shift/remove_sign
 #   Removes the sign
 ##
 

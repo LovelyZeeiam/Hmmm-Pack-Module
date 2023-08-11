@@ -1,4 +1,4 @@
-#> extended_float:32/power/odd
+#> hmmm:bitwise/extended_float/32/power/odd
 #   Case when the base is negative and exponent is an odd integer
 #
 

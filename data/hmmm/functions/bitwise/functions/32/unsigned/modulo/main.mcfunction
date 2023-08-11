@@ -1,4 +1,4 @@
-#> bitwise:32/unsigned/modulo/main
+#> hmmm:bitwise/32/unsigned/modulo/main
 #   Return the unsigned modulo of io.P[0, 1]
 ##
 # @params
@@ -9,5 +9,5 @@
 #       32-bit integer
 ##
 
-function bitwise:32/unsigned/divmod/main
+function hmmm:bitwise/32/unsigned/divmod/main
 scoreboard players operation R0 io = R1 io

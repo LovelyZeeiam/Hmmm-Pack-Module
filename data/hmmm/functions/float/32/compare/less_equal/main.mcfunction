@@ -1,4 +1,4 @@
-#> float:32/compare/less_equal/main
+#> hmmm:bitwise/float/32/compare/less_equal/main
 #   Check whether the first number is less than or equal to the second
 ##
 # @params
@@ -12,4 +12,4 @@
 #
 scoreboard players set R0 io 0
 execute if score P0 io matches 1 if score P3 io matches 0 run scoreboard players set R0 io 1
-execute if score P0 io = P3 io run function float:32/compare/less/branch0
+execute if score P0 io = P3 io run function hmmm:bitwise/float/32/compare/less/branch0

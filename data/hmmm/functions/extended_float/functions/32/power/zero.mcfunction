@@ -1,4 +1,4 @@
-#> extended_float:32/power/zero
+#> hmmm:bitwise/extended_float/32/power/zero
 #   Return one
 #
 
