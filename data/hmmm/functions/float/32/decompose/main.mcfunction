@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/decompose/main
+#> hmmm:float/32/decompose/main
 #   Return the exponent and significand of io.P0
 ##
 # @params
@@ -12,7 +12,7 @@
 # extract the leftmost bit (sign), leave R0 as 31-bits
 scoreboard players set R0 io 0
 scoreboard players operation R1 io = P0 io
-execute if score R1 io matches ..-1 run function hmmm:bitwise/float/32/decompose/extract_sign
+execute if score R1 io matches ..-1 run function hmmm:float/32/decompose/extract_sign
 
 
 scoreboard players operation R2 io = R1 io

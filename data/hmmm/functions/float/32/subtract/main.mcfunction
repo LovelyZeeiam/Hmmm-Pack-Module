@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/subtract/main
+#> hmmm:float/32/subtract/main
 #   Return the difference of two 32-bit floats
 ##
 # @params
@@ -15,4 +15,4 @@
 scoreboard players add P3 io 1
 execute if score P3 io matches 2 run scoreboard players set P3 io 0
 
-function hmmm:bitwise/float/32/add/main
+function hmmm:float/32/add/main

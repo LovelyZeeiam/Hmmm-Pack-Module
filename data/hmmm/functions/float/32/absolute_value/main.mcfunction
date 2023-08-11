@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/absolute_value/main
+#> hmmm:float/32/absolute_value/main
 #   Return the absolute value of a 32-bit float
 ##
 # @params

@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/add/branch10
+#> hmmm:float/32/add/branch10
 #   Sets io.R[0, 1, 2] to io.P[0, 1, 2]
 ##
 

@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/compare/greater/main
+#> hmmm:float/32/compare/greater/main
 #   Check whether the first number is greater than the second
 ##
 # @params
@@ -12,4 +12,4 @@
 #
 scoreboard players set R0 io 0
 execute if score P0 io matches 0 if score P3 io matches 1 run scoreboard players set R0 io 1
-execute if score P0 io = P3 io run function hmmm:bitwise/float/32/compare/greater/branch0
+execute if score P0 io = P3 io run function hmmm:float/32/compare/greater/branch0

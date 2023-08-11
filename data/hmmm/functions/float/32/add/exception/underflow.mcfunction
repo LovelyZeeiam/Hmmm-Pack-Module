@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/add/exception/underflow
+#> hmmm:float/32/add/exception/underflow
 #   Throw a underflow exception
 ##
 

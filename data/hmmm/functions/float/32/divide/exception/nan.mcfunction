@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/divide/exception/nan
+#> hmmm:float/32/divide/exception/nan
 #   Throw a NaN exception
 ##
 

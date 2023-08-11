@@ -1,8 +1,8 @@
-#> hmmm:bitwise/float/32/divide/exception/overflow
+#> hmmm:float/32/divide/exception/overflow
 #   Throw a overflow exception, set output to infinity
 ##
 
-function hmmm:bitwise/float/32/divide/branch20
+function hmmm:float/32/divide/branch20
 scoreboard players set 8 temp 1
 
 tellraw @a[tag=exception] [{"text":"[Exception] Exponent Overflow. Use /tag @s remove exception to ignore these messages.","color":"red"}]

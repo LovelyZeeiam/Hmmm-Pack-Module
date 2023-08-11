@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/check_type/main
+#> hmmm:float/32/check_type/main
 #   Return what a decomposed float is.
 #   0 = NaN, 1 = Inf, 2 = -Inf, 3 = 0, 4 = -0, 5 = Proper Number
 # @params
@@ -12,5 +12,5 @@
 ##
 
 scoreboard players set R0 io 5
-execute if score P1 io matches 128 run function hmmm:bitwise/float/32/check_type/dne
-execute if score P1 io matches -127 if score P2 io matches 0 run function hmmm:bitwise/float/32/check_type/zero
+execute if score P1 io matches 128 run function hmmm:float/32/check_type/dne
+execute if score P1 io matches -127 if score P2 io matches 0 run function hmmm:float/32/check_type/zero

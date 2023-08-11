@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/setup
+#> hmmm:float/setup
 
 scoreboard objectives add io dummy
 scoreboard objectives add temp dummy

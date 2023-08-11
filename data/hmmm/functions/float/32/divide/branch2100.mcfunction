@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/divide/branch2100
+#> hmmm:float/32/divide/branch2100
 #   Subtract dividend from divisor, increment one to the quotient
 #
 

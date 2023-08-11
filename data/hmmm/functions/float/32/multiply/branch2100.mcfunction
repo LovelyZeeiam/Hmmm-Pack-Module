@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/multiply/branch2100
+#> hmmm:float/32/multiply/branch2100
 #   Normalize Float
 #
 

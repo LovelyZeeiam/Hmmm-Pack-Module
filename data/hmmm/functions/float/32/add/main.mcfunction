@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/add/main
+#> hmmm:float/32/add/main
 #   Return the sum of two 32-bit floats
 ##
 # @params
@@ -35,13 +35,13 @@ execute unless score 5 temp matches -127 run scoreboard players add 7 temp 83886
 scoreboard players set 8 temp 0
 
 # check whether F0 is NaN, infinity, or 0
-function hmmm:bitwise/float/32/check_type/main
+function hmmm:float/32/check_type/main
 
 # nan exception
-execute if score R0 io matches 0 run function hmmm:bitwise/float/32/add/exception/nan
+execute if score R0 io matches 0 run function hmmm:float/32/add/exception/nan
 
 # return F1 if F0 is 0
-execute if score R0 io matches 3..4 run function hmmm:bitwise/float/32/add/branch0
+execute if score R0 io matches 3..4 run function hmmm:float/32/add/branch0
 
 # other case
-execute if score 8 temp matches 0 run function hmmm:bitwise/float/32/add/branch1
+execute if score 8 temp matches 0 run function hmmm:float/32/add/branch1

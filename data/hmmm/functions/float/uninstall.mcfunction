@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/uninstall
+#> hmmm:float/uninstall
 
 scoreboard objectives remove io
 scoreboard objectives remove temp

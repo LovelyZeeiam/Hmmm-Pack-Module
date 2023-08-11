@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/check_type/inf
+#> hmmm:float/32/check_type/inf
 #   branch for infinities
 ##
 

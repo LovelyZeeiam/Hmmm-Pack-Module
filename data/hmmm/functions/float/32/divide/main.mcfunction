@@ -1,4 +1,4 @@
-#> hmmm:bitwise/float/32/divide/main
+#> hmmm:float/32/divide/main
 #   Return the quotient of two 32-bit floats
 ##
 # @params
@@ -22,14 +22,14 @@ scoreboard players operation 4 temp = P4 io
 scoreboard players operation 5 temp = P5 io
 
 # check types for both
-function hmmm:bitwise/float/32/check_type/main
+function hmmm:float/32/check_type/main
 scoreboard players operation 6 temp = R0 io
 
 scoreboard players operation P0 io = 3 temp
 scoreboard players operation P1 io = 4 temp
 scoreboard players operation P2 io = 5 temp
 
-function hmmm:bitwise/float/32/check_type/main
+function hmmm:float/32/check_type/main
 scoreboard players operation 7 temp = R0 io
 
 # if...else handler
@@ -39,7 +39,7 @@ scoreboard players set 8 temp 0
 execute if score 6 temp matches 0 run scoreboard players set 8 temp 1
 execute if score 7 temp matches 0 run scoreboard players set 8 temp 1
 
-execute if score 8 temp matches 1 run function hmmm:bitwise/float/32/divide/exception/nan
-execute if score 8 temp matches 0 run function hmmm:bitwise/float/32/divide/branch0
+execute if score 8 temp matches 1 run function hmmm:float/32/divide/exception/nan
+execute if score 8 temp matches 0 run function hmmm:float/32/divide/branch0
 
 

@@ -10,12 +10,12 @@ function u_test:run/reset
 scoreboard players set expected u_test 1065353216
 
 scoreboard players set P0 io 1
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -25,12 +25,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1073741824
 
 scoreboard players set P0 io 2
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -40,12 +40,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1082130432
 
 scoreboard players set P0 io 4
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -55,12 +55,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1090519040
 
 scoreboard players set P0 io 8
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -70,12 +70,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1098907648
 
 scoreboard players set P0 io 16
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -85,12 +85,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1107296256
 
 scoreboard players set P0 io 32
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -100,12 +100,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1317011456
 
 scoreboard players set P0 io 1073741824
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -115,12 +115,12 @@ function u_test:run/score
 scoreboard players set expected u_test 0
 
 scoreboard players set P0 io 0
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -130,12 +130,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1077936128
 
 scoreboard players set P0 io 3
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -145,12 +145,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1226609808
 
 scoreboard players set P0 io 641353
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
@@ -160,12 +160,12 @@ function u_test:run/score
 scoreboard players set expected u_test 1325400063
 
 scoreboard players set P0 io 2147483647
-function hmmm:bitwise/float/32/convert/from_int/main
+function hmmm:float/32/convert/from_int/main
 
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score

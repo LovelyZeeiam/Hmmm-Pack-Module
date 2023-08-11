@@ -140,37 +140,37 @@ scoreboard players get R0 io
 ***All Floating-Point Functions***:  
 ```
 
-hmmm:bitwise/float/32/decompose/main
-hmmm:bitwise/float/32/recompose/main
-hmmm:bitwise/float/32/add/main
-hmmm:bitwise/float/32/subtract/main
-hmmm:bitwise/float/32/multiply/main
-hmmm:bitwise/float/32/divide/main
-hmmm:bitwise/float/32/convert/to_storage/main
-hmmm:bitwise/float/32/convert/to_storage_double/main
-hmmm:bitwise/float/32/convert/from_int/main
-hmmm:bitwise/float/32/negate/main
-hmmm:bitwise/float/32/absolute_value/main
-hmmm:bitwise/float/32/compare/less
-hmmm:bitwise/float/32/compare/less_equal
-hmmm:bitwise/float/32/compare/equal
-hmmm:bitwise/float/32/compare/greater
-hmmm:bitwise/float/32/compare/greater_equal
+hmmm:float/32/decompose/main
+hmmm:float/32/recompose/main
+hmmm:float/32/add/main
+hmmm:float/32/subtract/main
+hmmm:float/32/multiply/main
+hmmm:float/32/divide/main
+hmmm:float/32/convert/to_storage/main
+hmmm:float/32/convert/to_storage_double/main
+hmmm:float/32/convert/from_int/main
+hmmm:float/32/negate/main
+hmmm:float/32/absolute_value/main
+hmmm:float/32/compare/less
+hmmm:float/32/compare/less_equal
+hmmm:float/32/compare/equal
+hmmm:float/32/compare/greater
+hmmm:float/32/compare/greater_equal
 
-hmmm:bitwise/extended_float/32/compare/floor
-hmmm:bitwise/extended_float/32/compare/ceiling
-hmmm:bitwise/extended_float/32/compare/truncate
-hmmm:bitwise/extended_float/32/compare/log
-hmmm:bitwise/extended_float/32/compare/exponential
-hmmm:bitwise/extended_float/32/compare/power
-hmmm:bitwise/extended_float/32/compare/root
-hmmm:bitwise/extended_float/32/compare/fast_inverse_sqrt
-hmmm:bitwise/extended_float/32/compare/sin
-hmmm:bitwise/extended_float/32/compare/cos
-hmmm:bitwise/extended_float/32/compare/tan
-hmmm:bitwise/extended_float/32/compare/asin
-hmmm:bitwise/extended_float/32/compare/acos
-hmmm:bitwise/extended_float/32/compare/atan
+hmmm:extended_float/32/compare/floor
+hmmm:extended_float/32/compare/ceiling
+hmmm:extended_float/32/compare/truncate
+hmmm:extended_float/32/compare/log
+hmmm:extended_float/32/compare/exponential
+hmmm:extended_float/32/compare/power
+hmmm:extended_float/32/compare/root
+hmmm:extended_float/32/compare/fast_inverse_sqrt
+hmmm:extended_float/32/compare/sin
+hmmm:extended_float/32/compare/cos
+hmmm:extended_float/32/compare/tan
+hmmm:extended_float/32/compare/asin
+hmmm:extended_float/32/compare/acos
+hmmm:extended_float/32/compare/atan
 
 ```
 
@@ -182,7 +182,7 @@ Similar to unsigned 32-bit integers, floating point numbers in this datapack wil
 For instance, the floating point number '86.5', which has a binary representation of '01000010101011010000000000000000' will be stored as a scoreboard value of '1118633984'. We will call these integer values 'raw floats'.
 
 Before performing any operations on our raw floats, we must decompose them.  
-The ```hmmm:bitwise/float/32/decompose/main``` function takes a raw float and returns three scoreboard values io.R\[0..2\]: sign, exponent, and significand (mantissa). You don't need to know what these are to use the library. You can use ```hmmm:bitwise/float/32/recompose/main``` to turn these three values back into a raw float.
+The ```hmmm:float/32/decompose/main``` function takes a raw float and returns three scoreboard values io.R\[0..2\]: sign, exponent, and significand (mantissa). You don't need to know what these are to use the library. You can use ```hmmm:float/32/recompose/main``` to turn these three values back into a raw float.
 
 To perform operations on floats, you should set io.P\[0..2\] and io.P\[3..5\] each to the returned values of a decomposed float.  
 
@@ -192,7 +192,7 @@ To perform ```27504.27734375 + 64317.64453125 = 91821.921875```:
 # 1188487310 is the integer representation of 64317.64453125 (both 01000110110101101110000010001110)
 scoreboard players set P0 io 1188487310
 
-function hmmm:bitwise/float/32/decompose/main
+function hmmm:float/32/decompose/main
 # copy io.R[0..2] to io.P[3..5].
 scoreboard players operation P3 io = R0 io
 scoreboard players operation P4 io = R1 io
@@ -201,14 +201,14 @@ scoreboard players operation P5 io = R2 io
 # 1199259045 is the integer representation of 27504.27734375 (both 01000111011110110011110110100101)
 scoreboard players set P0 io 1199259045
 
-function hmmm:bitwise/float/32/decompose/main
+function hmmm:float/32/decompose/main
 # copy io.R[0..2] to io.P[0..2].
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 
 # finally call the function to add io.P[0..2] and io.P[3..5]
-function hmmm:bitwise/float/32/add/main
+function hmmm:float/32/add/main
 
 # if you're done, you can turn these values back into a raw float.
 # set the result to the parameter
@@ -216,7 +216,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 # turn the three scoreboard variables back into one raw float.
-function hmmm:bitwise/float/32/recompose/main
+function hmmm:float/32/recompose/main
 ```
 
 You can get the result of this using:  
@@ -226,20 +226,20 @@ scoreboard players get io R0
 which will return 1202935542, or 01000111101100110101011011110110 in binary and 91821.921875 as a floating point representation.
 
 
-You can also convert floating point numbers into NBT Storage using ```hmmm:bitwise/float/32/convert/to_storage/main``` if you want to use it to modify say, an armor stand pose or whatever you might need super accurate floating-point NBTs for.
+You can also convert floating point numbers into NBT Storage using ```hmmm:float/32/convert/to_storage/main``` if you want to use it to modify say, an armor stand pose or whatever you might need super accurate floating-point NBTs for.
 
 ***Example Usage***  
 To turn 1199259045 (01000111011110110011110110100101) to 27504.27734375:
 ```mcfunction
 # first decompose the raw float
 scoreboard players set P0 io 1199259045
-function hmmm:bitwise/float/32/decompose/main
+function hmmm:float/32/decompose/main
 # copy results to input
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 # convert to NBT storage. Return to {io.R0}
-function hmmm:bitwise/float/32/convert/to_storage/main
+function hmmm:float/32/convert/to_storage/main
 ```
 You can access the returned NBT storage float using  
 ```mcfunction
